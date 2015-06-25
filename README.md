@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
 * [PhantomJS](http://phantomjs.org/)
 
 #### Running / Development
-To run a small dev server with autoreload, simply execute `ember nw`. Since we're running Node and UI JavaScript on the same thread, running `ember serve` alone won't suffice.
+To run a small development server with autoreload, simply execute `ember nw`. Since we're running Node and UI JavaScript on the same thread, running `ember serve` alone won't suffice.
 
 #### Running Tests
 All tests suites can be run with `npm test`. 
@@ -27,3 +27,6 @@ Code Style tests with JSHint and JSCS can be run with `grunt test`.
 Building packaged apps is automated via Grunt. From any Unix machine, run `grunt compile`, which will first build the latest version of the Ember app followed by packaging it for OS X, Linux, Windows, and a transfer of the changed ffmpeg binaries.
 
 Please note that in order to create a Windows build with the correct icon, you need to run `grunt prebuild && grunt compileWindowsWithIcon` from either a Windows machine or a Unix machine with Wine installed.
+
+## License
+This software is licensed GPLv3, because it is internally using GPL-licensed components to display and play various media formats. We'd like to use a more permissible license like the MIT license, but playing and displaying commonly used media formats requires us to limit the way you can use this source code. For more details, please consult the file `LICENSE` and the [GNU GPLv3 website](http://www.gnu.org/licenses/gpl-3.0.en.html).
